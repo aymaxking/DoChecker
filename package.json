@@ -2,6 +2,7 @@
   "name": "do-checker-front",
   "version": "0.0.0",
   "scripts": {
+    "ngcc": "ngcc",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
