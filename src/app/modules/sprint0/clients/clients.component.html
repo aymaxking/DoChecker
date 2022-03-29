@@ -1,0 +1,21 @@
+<p>Clients works!</p>
+<div class="panel-body table-responsive">
+  <table class="table">
+    <thead>
+    <tr>
+      <th></th>
+      <th>Fullname</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let client of clients;index as i">
+      <td>{{i + 1}}</td>
+      <td>{{client.fullname}}</td>
+      <td>{{client.email}}</td>
+      <td>{{client.phone}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
