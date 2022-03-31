@@ -9,5 +9,4 @@ RUN npm run build -- --outputPath=./dist/out --configuration $configuration
 FROM nginx
 COPY --from=DoCheckerAngularBuild /DoChecker/DoCheckerFront/dist/out/ /usr/share/nginx/html
 COPY /nginx.conf  /etc/nginx/conf.d/default.conf
-
 EXPOSE 4200:80
